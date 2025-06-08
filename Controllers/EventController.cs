@@ -36,4 +36,14 @@ public class EventController : ControllerBase
         }
         return Ok(entity);
     }
+
+    [HttpPost]
+    public async Task<ActionResult<Event>> CreateEvent([FromBody] Event newEvent)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var created = await _eventService.CreateEventAsync(newEvent);
+        return Ok(created);
+    }
 }
