@@ -1,6 +1,6 @@
 using EventService.Data;
 using Microsoft.EntityFrameworkCore;
-
+// koden skriven i samarbete med Chatgpt
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

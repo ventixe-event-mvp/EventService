@@ -3,7 +3,7 @@ using EventService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventService.Services;
-
+//koden skriven i samarbete med Chatgpt
 public class EventServiceHandler
 {
     private readonly AppDbContext _context;
